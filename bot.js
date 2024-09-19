@@ -3,7 +3,7 @@ const { Telegraf, Markup } = require('telegraf');
 const { message } = require('telegraf/filters');
 const axios = require ('axios');
 
-const bot = new Telegraf('7700803351:AAGp5YdIcT49DM3MyjyPSGmcvpePdFLtML4')
+const bot = new Telegraf('')
 
 
 bot.start((ctx) => ctx.reply('this is startGit'))
@@ -12,7 +12,8 @@ bot.start((ctx) => ctx.reply('this is startGit'))
 // bot.on('message', async (ctx) => {
 //     // console.log (ctx);
 //     // const id = ctx.message.from.id;
-//     const url = 'https://api.telegram.org/bot7700803351:AAGp5YdIcT49DM3MyjyPSGmcvpePdFLtML4/sendMessage?chat_id=412697670&text=yo';
+//     const url = 'https://api.telegram.org/bot
+/sendMessage?chat_id=&text=yo';
 //     const response = await axios.get(url);
 //     console.log(response);
 // })
@@ -34,9 +35,9 @@ bot.action('button_click', (ctx) => {
     ctx.reply('Button clicked!');
     console.log (ctx.update);
     var qid = ctx.update.callback_query.id;
-    // var id = 412697670;
-    // const url = `https://api.telegram.org/bot7700803351:AAGp5YdIcT49DM3MyjyPSGmcvpePdFLtML4/sendMessage?chat_id=${id}&text=fromCode`;
-    const url = `https://api.telegram.org/bot7700803351:AAGp5YdIcT49DM3MyjyPSGmcvpePdFLtML4/answerCallbackQuery?callback_query_id=${qid}&text=hello&show_alert=true`;
+
+      const url = `https://api.telegram.org/bot
+      /answerCallbackQuery?callback_query_id=${qid}&text=hello&show_alert=true`;
     axios.get(url);
 
 });
