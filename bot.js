@@ -6,7 +6,7 @@ const axios = require ('axios');
 const bot = new Telegraf('7700803351:AAGp5YdIcT49DM3MyjyPSGmcvpePdFLtML4')
 
 
-// bot.start((ctx) => ctx.reply('this is startGit'))
+bot.start((ctx) => ctx.reply('this is startGit'))
 // bot.help((ctx) => ctx.reply('this is helpGit'))
 
 // bot.on('message', async (ctx) => {
@@ -25,7 +25,7 @@ const bot = new Telegraf('7700803351:AAGp5YdIcT49DM3MyjyPSGmcvpePdFLtML4')
 // ===
 
 bot.help((ctx) => {
-    ctx.reply('This is help2', Markup.inlineKeyboard([
+    ctx.reply('This is helpGit', Markup.inlineKeyboard([
         Markup.button.callback('Click me', 'button_click')
     ]));
 });
