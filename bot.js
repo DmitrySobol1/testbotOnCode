@@ -6,8 +6,8 @@ const axios = require ('axios');
 const bot = new Telegraf('7700803351:AAGp5YdIcT49DM3MyjyPSGmcvpePdFLtML4')
 
 
-// bot.start((ctx) => ctx.reply('this is start'))
-// bot.help((ctx) => ctx.reply('this is help'))
+// bot.start((ctx) => ctx.reply('this is startGit'))
+// bot.help((ctx) => ctx.reply('this is helpGit'))
 
 // bot.on('message', async (ctx) => {
 //     // console.log (ctx);
